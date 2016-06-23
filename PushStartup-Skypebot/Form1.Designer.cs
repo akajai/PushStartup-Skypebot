@@ -34,13 +34,11 @@
             this.toolStripButtonlogin = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonSaveMessage = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonSaveReport = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonskypeusers = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tabControlMain = new System.Windows.Forms.TabControl();
-            this.tabPageLogin = new System.Windows.Forms.TabPage();
             this.tabPageMain = new System.Windows.Forms.TabPage();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
-            this.buttonAddContacts = new System.Windows.Forms.Button();
-            this.buttonSend = new System.Windows.Forms.Button();
             this.richTextBoxWelcomeMessage = new System.Windows.Forms.RichTextBox();
             this.labelWelcomeMessage = new System.Windows.Forms.Label();
             this.buttonSkypeSearch = new System.Windows.Forms.Button();
@@ -48,14 +46,14 @@
             this.textBoxSearchStr = new System.Windows.Forms.TextBox();
             this.checkedListBoxSearchUsers = new System.Windows.Forms.CheckedListBox();
             this.tabPageMesaageTemplate = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMessages = new System.Windows.Forms.DataGridView();
             this.tabPageReports = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listBoxReports = new System.Windows.Forms.ListBox();
             this.dataGridViewReports = new System.Windows.Forms.DataGridView();
             this.tabPageSkypeUsers = new System.Windows.Forms.TabPage();
             this.dataGridViewSkypeUsers = new System.Windows.Forms.DataGridView();
-            this.toolStripButtonskypeusers = new System.Windows.Forms.ToolStripButton();
+            this.saveFileDialogcsv = new System.Windows.Forms.SaveFileDialog();
             this.toolStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -66,7 +64,7 @@
             this.splitContainerMain.Panel2.SuspendLayout();
             this.splitContainerMain.SuspendLayout();
             this.tabPageMesaageTemplate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMessages)).BeginInit();
             this.tabPageReports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -119,6 +117,7 @@
             this.toolStripButtonSaveMessage.Name = "toolStripButtonSaveMessage";
             this.toolStripButtonSaveMessage.Size = new System.Drawing.Size(112, 24);
             this.toolStripButtonSaveMessage.Text = "Save Messages";
+            this.toolStripButtonSaveMessage.Click += new System.EventHandler(this.toolStripButtonSaveMessage_Click);
             // 
             // toolStripButtonSaveReport
             // 
@@ -128,6 +127,17 @@
             this.toolStripButtonSaveReport.Name = "toolStripButtonSaveReport";
             this.toolStripButtonSaveReport.Size = new System.Drawing.Size(93, 24);
             this.toolStripButtonSaveReport.Text = "Save Report";
+            this.toolStripButtonSaveReport.Click += new System.EventHandler(this.toolStripButtonSaveReport_Click);
+            // 
+            // toolStripButtonskypeusers
+            // 
+            this.toolStripButtonskypeusers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonskypeusers.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonskypeusers.Image")));
+            this.toolStripButtonskypeusers.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonskypeusers.Name = "toolStripButtonskypeusers";
+            this.toolStripButtonskypeusers.Size = new System.Drawing.Size(144, 24);
+            this.toolStripButtonskypeusers.Text = "Update Skype Users";
+            this.toolStripButtonskypeusers.Click += new System.EventHandler(this.toolStripButtonskypeusers_Click);
             // 
             // toolStripContainer1
             // 
@@ -145,7 +155,6 @@
             // 
             // tabControlMain
             // 
-            this.tabControlMain.Controls.Add(this.tabPageLogin);
             this.tabControlMain.Controls.Add(this.tabPageMain);
             this.tabControlMain.Controls.Add(this.tabPageMesaageTemplate);
             this.tabControlMain.Controls.Add(this.tabPageReports);
@@ -157,15 +166,6 @@
             this.tabControlMain.Size = new System.Drawing.Size(821, 447);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.SelectedIndexChanged += new System.EventHandler(this.tabControlMain_SelectedIndexChanged);
-            // 
-            // tabPageLogin
-            // 
-            this.tabPageLogin.Location = new System.Drawing.Point(4, 25);
-            this.tabPageLogin.Name = "tabPageLogin";
-            this.tabPageLogin.Size = new System.Drawing.Size(813, 418);
-            this.tabPageLogin.TabIndex = 4;
-            this.tabPageLogin.Text = "Login";
-            this.tabPageLogin.UseVisualStyleBackColor = true;
             // 
             // tabPageMain
             // 
@@ -187,8 +187,6 @@
             // 
             // splitContainerMain.Panel1
             // 
-            this.splitContainerMain.Panel1.Controls.Add(this.buttonAddContacts);
-            this.splitContainerMain.Panel1.Controls.Add(this.buttonSend);
             this.splitContainerMain.Panel1.Controls.Add(this.richTextBoxWelcomeMessage);
             this.splitContainerMain.Panel1.Controls.Add(this.labelWelcomeMessage);
             this.splitContainerMain.Panel1.Controls.Add(this.buttonSkypeSearch);
@@ -202,26 +200,6 @@
             this.splitContainerMain.Size = new System.Drawing.Size(807, 412);
             this.splitContainerMain.SplitterDistance = 146;
             this.splitContainerMain.TabIndex = 0;
-            // 
-            // buttonAddContacts
-            // 
-            this.buttonAddContacts.Location = new System.Drawing.Point(613, 104);
-            this.buttonAddContacts.Name = "buttonAddContacts";
-            this.buttonAddContacts.Size = new System.Drawing.Size(162, 28);
-            this.buttonAddContacts.TabIndex = 11;
-            this.buttonAddContacts.Text = "&Add To Contacts";
-            this.buttonAddContacts.UseVisualStyleBackColor = true;
-            this.buttonAddContacts.Click += new System.EventHandler(this.buttonAddContacts_Click);
-            // 
-            // buttonSend
-            // 
-            this.buttonSend.Location = new System.Drawing.Point(613, 57);
-            this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(162, 28);
-            this.buttonSend.TabIndex = 10;
-            this.buttonSend.Text = "Sen&d Message";
-            this.buttonSend.UseVisualStyleBackColor = true;
-            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
             // richTextBoxWelcomeMessage
             // 
@@ -241,11 +219,11 @@
             // 
             // buttonSkypeSearch
             // 
-            this.buttonSkypeSearch.Location = new System.Drawing.Point(613, 12);
+            this.buttonSkypeSearch.Location = new System.Drawing.Point(613, 23);
             this.buttonSkypeSearch.Name = "buttonSkypeSearch";
             this.buttonSkypeSearch.Size = new System.Drawing.Size(162, 28);
             this.buttonSkypeSearch.TabIndex = 7;
-            this.buttonSkypeSearch.Text = "&Search In Skype";
+            this.buttonSkypeSearch.Text = "&Start Campaign";
             this.buttonSkypeSearch.UseVisualStyleBackColor = true;
             this.buttonSkypeSearch.Click += new System.EventHandler(this.buttonSkypeSearch_Click);
             // 
@@ -277,7 +255,7 @@
             // 
             // tabPageMesaageTemplate
             // 
-            this.tabPageMesaageTemplate.Controls.Add(this.dataGridView1);
+            this.tabPageMesaageTemplate.Controls.Add(this.dataGridViewMessages);
             this.tabPageMesaageTemplate.Location = new System.Drawing.Point(4, 25);
             this.tabPageMesaageTemplate.Name = "tabPageMesaageTemplate";
             this.tabPageMesaageTemplate.Size = new System.Drawing.Size(813, 418);
@@ -285,15 +263,15 @@
             this.tabPageMesaageTemplate.Text = "Mesaage Template";
             this.tabPageMesaageTemplate.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewMessages
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(813, 418);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewMessages.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMessages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewMessages.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewMessages.Name = "dataGridViewMessages";
+            this.dataGridViewMessages.RowTemplate.Height = 24;
+            this.dataGridViewMessages.Size = new System.Drawing.Size(813, 418);
+            this.dataGridViewMessages.TabIndex = 0;
             // 
             // tabPageReports
             // 
@@ -332,6 +310,7 @@
             this.listBoxReports.Name = "listBoxReports";
             this.listBoxReports.Size = new System.Drawing.Size(171, 412);
             this.listBoxReports.TabIndex = 0;
+            this.listBoxReports.SelectedIndexChanged += new System.EventHandler(this.listBoxReports_SelectedIndexChanged);
             // 
             // dataGridViewReports
             // 
@@ -364,14 +343,9 @@
             this.dataGridViewSkypeUsers.Size = new System.Drawing.Size(807, 412);
             this.dataGridViewSkypeUsers.TabIndex = 0;
             // 
-            // toolStripButtonskypeusers
+            // saveFileDialogcsv
             // 
-            this.toolStripButtonskypeusers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonskypeusers.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonskypeusers.Image")));
-            this.toolStripButtonskypeusers.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonskypeusers.Name = "toolStripButtonskypeusers";
-            this.toolStripButtonskypeusers.Size = new System.Drawing.Size(144, 24);
-            this.toolStripButtonskypeusers.Text = "Update Skype Users";
+            this.saveFileDialogcsv.Filter = "\"CSV file (*.csv)|*.csv| All Files (*.*)|*.*\";";
             // 
             // Form1
             // 
@@ -396,7 +370,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).EndInit();
             this.splitContainerMain.ResumeLayout(false);
             this.tabPageMesaageTemplate.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMessages)).EndInit();
             this.tabPageReports.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -424,9 +398,8 @@
         private System.Windows.Forms.ListBox listBoxReports;
         private System.Windows.Forms.DataGridView dataGridViewReports;
         private System.Windows.Forms.TabPage tabPageMesaageTemplate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewMessages;
         private System.Windows.Forms.SplitContainer splitContainerMain;
-        private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.RichTextBox richTextBoxWelcomeMessage;
         private System.Windows.Forms.Label labelWelcomeMessage;
         private System.Windows.Forms.Button buttonSkypeSearch;
@@ -436,9 +409,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonlogin;
         private System.Windows.Forms.ToolStripButton toolStripButtonSaveMessage;
         private System.Windows.Forms.ToolStripButton toolStripButtonSaveReport;
-        private System.Windows.Forms.TabPage tabPageLogin;
-        private System.Windows.Forms.Button buttonAddContacts;
         private System.Windows.Forms.ToolStripButton toolStripButtonskypeusers;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogcsv;
     }
 }
 

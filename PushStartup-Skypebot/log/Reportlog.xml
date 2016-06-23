@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReportList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReportName campaignName="test" searchString="test1234" />
+  <ReportName campaignName="test" searchString="test">
+    <UserDetails userhandle="sandersontestprep" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testfairy" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testskypesky" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="test.user007" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest78909" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testvikzap" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="test.jazel" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="national283" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest7540" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest88114" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest6563" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testgvj" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest2142" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest5753" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="test1gtm" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest2498" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest3532" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="testingpcc" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="petrxy_68" timestamp="23-06-2016 12:59:25" Message="Hi. Wecome " />
+    <UserDetails userhandle="tester7193" timestamp="23-06-2016 12:59:26" Message="Hi. Wecome " />
+  </ReportName>
+  <ReportName campaignName="123" searchString="test">
+    <UserDetails userhandle="sandersontestprep" timestamp="23-06-2016 13:03:58" Message="Hi. Wecome " />
+    <UserDetails userhandle="testfairy" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testskypesky" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="test.user007" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest78909" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testvikzap" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="test.jazel" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="national283" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest7540" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest88114" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest6563" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testgvj" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest2142" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest5753" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="test1gtm" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest2498" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testtest3532" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="testingpcc" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="petrxy_68" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+    <UserDetails userhandle="tester7193" timestamp="23-06-2016 13:03:59" Message="Hi. Wecome " />
+  </ReportName>
+  <ReportName campaignName="saas" searchString="erer">
+    <UserDetails userhandle="sheeryna.eryna" timestamp="23-06-2016 13:05:32" Message="Hi. Wecome " />
+    <UserDetails userhandle="erer88" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer7273" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer6691" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="skype221664" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer1720" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="erer1126" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="q46465" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="a513828095" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer5342" timestamp="23-06-2016 13:05:33" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer4715" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer4243" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer4368" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="r56397885" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="erererer1606" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="kaykuoet" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="zhangzhinan92" timestamp="23-06-2016 13:05:34" Message="Hi. Wecome " />
+    <UserDetails userhandle="ererererer206" timestamp="23-06-2016 13:05:35" Message="Hi. Wecome " />
+    <UserDetails userhandle="a3493482" timestamp="23-06-2016 13:05:35" Message="Hi. Wecome " />
+    <UserDetails userhandle="erer9006" timestamp="23-06-2016 13:05:35" Message="Hi. Wecome " />
+  </ReportName>
+</ReportList>
